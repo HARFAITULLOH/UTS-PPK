@@ -1,0 +1,121 @@
+/* HEADER CSS */
+section#experience header {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#experience header a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* HEADER CSS */
+
+section#experience {
+  position: relative;
+}
+
+section#experience main {
+  background-color: #313866;
+  padding: 0 100px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/icons/bg-3.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAIN CONTENT CSS */
+section#experience main .content {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section#experience main .content article {
+  background-color: #aef7ff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #654e92;
+  padding-bottom: 10px;
+}
+
+section#experience main .content article img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+section#experience main .content article h2 {
+  margin: 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #654e92;
+}
+
+section#experience main .content article p {
+  max-width: 550px;
+  text-align: center;
+  font-size: 16px;
+}
+
+section#experience main .content div {
+  width: 5px;
+  height: 100px;
+  background-color: #adf7ff;
+}
+
+section#experience main .content > :nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 30px;
+  gap: 0px 10px;
+}
+
+/* MAIN CONTENT CSS */
+
+/* FOOTER CSS */
+section#experience footer {
+  position: absolute;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#experience footer a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* FOOTER CSS */
+
+/* ANIMATION */
+section#experience:target header {
+  animation: topToCenterA 1s;
+}
+
+section#experience:target .title {
+  animation: leftToCenterA 1s;
+}
+
+section#experience:target main .content article {
+  animation: smallToBig 1s;
+}
+/* Last Target */

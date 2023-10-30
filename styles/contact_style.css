@@ -1,0 +1,178 @@
+/* HEADER CSS */
+section#contact header {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#contact header a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* HEADER CSS */
+
+section#contact {
+  position: relative;
+}
+
+section#contact main {
+  background-color: #22274d;
+  padding: 0 100px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN CONTENT CSS */
+section#contact main .content {
+  background-color: #dfc9f3;
+  width: 100%;
+  margin: 0px 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section#contact main .content > :nth-child(1) {
+  width: 55%;
+  background-color: #dfc9f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 10px 0px;
+  color: #22274d;
+}
+
+section#contact main .content > :nth-child(1) h1 {
+  font-size: 1.4vw;
+}
+
+section#contact main .content > :nth-child(1) form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 50%;
+}
+
+section#contact main .content > :nth-child(1) form > * {
+  outline: none;
+}
+
+section#contact main .content > :nth-child(1) form input {
+  width: 100%;
+  background-color: #9d76c1;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 150px;
+}
+
+section#contact main .content > :nth-child(1) form input::placeholder {
+  color: white;
+}
+
+section#contact main .content > :nth-child(1) form textarea {
+  background-color: #dfc9f3;
+  border: 2px solid #9d76c1;
+  border-radius: 15px;
+  padding: 15px;
+  min-height: 150px;
+  width: 100%;
+}
+
+section#contact main .content > :nth-child(1) form textarea::placeholder {
+  color: #22274d;
+}
+
+section#contact main .content > :nth-child(1) form button {
+  background-color: #9d76c1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: white;
+}
+
+section#contact main .content > :nth-child(1) form button:hover {
+  background-color: #784e9f;
+}
+
+section#contact main .content > :nth-child(2) {
+  width: 45%;
+  border-radius: 20px 0 0 20px;
+  background-color: #9d76c1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  padding: 50px 20px;
+  gap: 50px;
+}
+
+section#contact main .content > :nth-child(2) h1 {
+  font-size: 2.5vw;
+}
+
+section#contact main .content > :nth-child(2) svg {
+  width: 100%;
+}
+
+/* MAIN CONTENT CSS */
+
+/* FOOTER CSS */
+section#contact footer {
+  position: absolute;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#contact footer a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* FOOTER CSS */
+
+/* ANIMATION */
+section#contact:target header {
+  animation: topToCenterA 1s;
+}
+
+section#contact:target .title {
+  animation: leftToCenterA 1s;
+}
+
+section#contact:target main .content > :nth-child(1) {
+  animation: topLeftToCenter 1s;
+}
+
+section#contact:target main .content > :nth-child(3) {
+  animation: bottomLeftToCenter 1s;
+}
+
+section#contact:target main .content > :nth-child(2) {
+  animation: topRightToCenter 1s;
+}
+
+section#contact:target main .content > :nth-child(4) {
+  animation: bottomRightToCenter 1s;
+}
+/* Last Target */

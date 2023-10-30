@@ -1,0 +1,301 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #190482;
+  color: white;
+  font-family: Inter, sans-serif;
+  overflow: hidden;
+}
+
+nav {
+  height: 83px;
+  background-color: #8e8ffa;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 47px;
+  left: 100px;
+  right: 100px;
+  padding-right: 47px;
+  border-radius: 16px;
+  border: 1px solid #c2d9ff;
+  box-shadow: 5px 5px 7px 0px #c2d9ff;
+}
+
+nav img {
+  height: 105px;
+  position: absolute;
+  left: -15px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0px 10px;
+}
+
+nav ul li a {
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+nav ul li.contact a {
+  color: #190482;
+  display: inline-block;
+  border: 2px solid #190482;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+nav ul li.contact a:hover {
+  color: white;
+  background-color: #190482;
+}
+
+nav ul li a::after {
+  content: '';
+  border-bottom: 2px solid #190482;
+  display: block;
+  transform: scaleX(0);
+}
+
+nav ul li a:hover {
+  transition: 0.3s;
+  color: #190482;
+}
+
+nav ul li a:hover:after {
+  transform: scaleX(0.5);
+  transition: 0.3s;
+}
+
+section#home {
+  position: relative;
+}
+
+section#home main {
+  padding: 0 100px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('../assets/icons/bg-1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAIN CONTENT CSS */
+section#home main .content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+section#home main .content > h1 {
+  font-size: 5.5vw;
+}
+
+section#home main .content > h1:nth-child(1) {
+  color: #8e8ffa;
+}
+
+section#home main .content > p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+section#home main .content > a {
+  display: inline-flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 16px;
+  border: 1px solid white;
+}
+
+section#home main .content a > :nth-child(2) {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+section#home main .content > a:nth-child(5) {
+  background-color: #7752fe;
+  margin-left: 10px;
+}
+
+section#home main .content > h1:nth-child(2) {
+  background-color: #7752fe;
+  display: inline-block;
+  padding: 0 20px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+}
+/* MAIN CONTENT CSS */
+
+/* MAIN ASIDE CSS */
+section#home main aside img {
+  border-radius: 95px;
+  height: 400px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 250px 21px #8e8ffa;
+}
+/* MAIN ASIDE CSS */
+
+/* FOOTER CSS */
+section#home footer {
+  position: absolute;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#home footer a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* FOOTER CSS */
+
+/* ANIMATION */
+section#home:target nav {
+  animation: topToCenterA 1s;
+}
+
+section#home:target main .content {
+  animation: leftToCenter 1s;
+}
+
+section#home:target main aside {
+  animation: rightToCenter 1s;
+}
+
+section:target footer {
+  animation: bottomToCenterA 1s;
+}
+/* Last Target */
+
+/* Custom animation */
+@keyframes smallToBig {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes leftToCenter {
+  0% {
+    margin-left: -8rem;
+  }
+
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+@keyframes rightToCenter {
+  0% {
+    margin-right: -8rem;
+  }
+
+  100% {
+    margin-left: 0rem;
+  }
+}
+
+@keyframes topLeftToCenter {
+  0% {
+    position: relative;
+    top: -4rem;
+    left: -4rem;
+  }
+
+  100% {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+  }
+}
+
+@keyframes bottomLeftToCenter {
+  0% {
+    position: relative;
+    bottom: -4rem;
+    left: -4rem;
+  }
+
+  100% {
+    position: relative;
+    bottom: 0rem;
+    left: 0rem;
+  }
+}
+
+@keyframes topRightToCenter {
+  0% {
+    position: relative;
+    top: -4rem;
+    right: -4rem;
+  }
+
+  100% {
+    position: relative;
+    top: 0rem;
+    right: 0rem;
+  }
+}
+@keyframes bottomRightToCenter {
+  0% {
+    position: relative;
+    bottom: -4rem;
+    right: -4rem;
+  }
+
+  100% {
+    position: relative;
+    bottom: 0rem;
+    right: 0rem;
+  }
+}
+
+/* ABSOLUTE CSS */
+@keyframes leftToCenterA {
+  0% {
+    left: -8rem;
+  }
+}
+
+@keyframes topToCenterA {
+  0% {
+    top: -8rem;
+  }
+}
+
+@keyframes bottomToCenterA {
+  0% {
+    bottom: -8rem;
+  }
+}
+/* Last Animation */

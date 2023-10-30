@@ -1,0 +1,113 @@
+/* HEADER CSS */
+section#skill header {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#skill header a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* HEADER CSS */
+
+section#skill {
+  position: relative;
+}
+
+section#skill main {
+  background-color: #654e92;
+  padding: 0 100px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/icons/bg-4.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAIN CONTENT CSS */
+section#skill main .content {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 78px;
+}
+
+section#skill main .content article {
+  background-color: #cae4ff;
+  color: #654e92;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+section#skill main .content article img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+section#skill main .content article h2 {
+  font-size: 20px;
+  margin: 10px 0px 0px;
+}
+
+/* MAIN CONTENT CSS */
+
+/* FOOTER CSS */
+section#skill footer {
+  position: absolute;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#skill footer a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* FOOTER CSS */
+
+/* ANIMATION */
+section#skill:target header {
+  animation: topToCenterA 1s;
+}
+
+section#skill:target .title {
+  animation: leftToCenterA 1s;
+}
+
+section#skill:target main .content > :nth-child(1) {
+  animation: topLeftToCenter 1s;
+}
+
+section#skill:target main .content > :nth-child(3) {
+  animation: bottomLeftToCenter 1s;
+}
+
+section#skill:target main .content > :nth-child(2) {
+  animation: topRightToCenter 1s;
+}
+
+section#skill:target main .content > :nth-child(4) {
+  animation: bottomRightToCenter 1s;
+}
+/* Last Target */

@@ -1,0 +1,163 @@
+/* HEADER CSS */
+section#education header {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#education header a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* HEADER CSS */
+
+/* TITLE CSS  */
+section .title {
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 20px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: black;
+}
+
+section .title h1 {
+  font-size: 50px;
+  font-family: 'Lobster', sans-serif;
+  text-shadow: 1px 1px 3px black;
+}
+/* TITLE CSS  */
+
+section#education {
+  position: relative;
+}
+
+section#education main {
+  background-color: #5b0888;
+  padding: 0 100px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/icons/bg-2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAIN CONTENT CSS */
+section#education main .content {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 78px;
+}
+
+section#education main .content article {
+  background-color: #9d76c1;
+  padding: 25px 42px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 30px 0px rgb(255, 255, 255, 50);
+}
+
+section#education main .content article h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+section#education main .content article .information {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 8px;
+}
+
+section#education main .content article .information div {
+  background-color: green;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section#education main .content article .information p {
+  color: green;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+section#education main .content article:nth-child(4) .information div {
+  background-color: #f07300;
+}
+
+section#education main .content article:nth-child(4) .information p {
+  color: #f07300;
+}
+/* MAIN CONTENT CSS */
+
+/* FOOTER CSS */
+section#education footer {
+  position: absolute;
+  bottom: 47px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+section#education footer a {
+  display: inline-block;
+  background-color: #7853fe;
+  padding: 15px;
+  border-radius: 100%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 60px 0px white;
+}
+/* FOOTER CSS */
+
+/* ANIMATION */
+section#education:target header {
+  animation: topToCenterA 1s;
+}
+
+section#education:target .title {
+  animation: leftToCenterA 1s;
+}
+
+section#education:target main .content > :nth-child(1) {
+  animation: topLeftToCenter 1s;
+}
+
+section#education:target main .content > :nth-child(3) {
+  animation: bottomLeftToCenter 1s;
+}
+
+section#education:target main .content > :nth-child(2) {
+  animation: topRightToCenter 1s;
+}
+
+section#education:target main .content > :nth-child(4) {
+  animation: bottomRightToCenter 1s;
+}
+/* Last Target */
