@@ -109,7 +109,7 @@ section#contact main .content > :nth-child(1) form button:hover {
   background-color: #784e9f;
 }
 
-section#contact main .content > :nth-child(1) p {
+section#contact main .content > :nth-child(1) p#coba {
   color: green;
 }
 
