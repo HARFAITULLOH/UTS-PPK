@@ -109,6 +109,10 @@ section#contact main .content > :nth-child(1) form button:hover {
   background-color: #784e9f;
 }
 
+section#contact main .content > :nth-child(1) p {
+  color: green;
+}
+
 section#contact main .content > :nth-child(2) {
   width: 45%;
   border-radius: 20px 0 0 20px;
