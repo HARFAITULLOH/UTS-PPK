@@ -1,0 +1,157 @@
+@media screen and (max-width: 1060px) {
+  nav ul {
+    display: none;
+  }
+
+  nav div.btn-menu {
+    display: block;
+  }
+
+  section#home main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  section#home main aside img {
+    height: 300px;
+  }
+
+  section#education main .content {
+    grid-template-columns: 100%;
+    overflow: scroll;
+    height: calc(70vh);
+    gap: 20px;
+  }
+
+  section#education main .content article {
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255, 50);
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.168);
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+
+  section#contact main .content {
+    flex-direction: column-reverse;
+    height: 70vh;
+  }
+
+  section#contact main .content > :nth-child(1),
+  section#contact main .content > :nth-child(2) {
+    width: 100%;
+  }
+
+  section#contact main .content > :nth-child(1) {
+    height: 60%;
+  }
+
+  section#contact main .content > :nth-child(2) {
+    height: 40%;
+    border-radius: 0;
+    gap: 20px;
+  }
+
+  section#contact main .content > :nth-child(1) h1 {
+    font-size: 2vw;
+  }
+
+  section#contact main .content > :nth-child(1) form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow: auto;
+  }
+
+  section#home footer a,
+  section#education footer a,
+  section#experience footer a,
+  section#contact footer a,
+  section#skill footer a {
+    display: none;
+  }
+
+  section#education header a,
+  section#experience header a,
+  section#contact header a,
+  section#skill header a {
+    display: none;
+  }
+
+  section#education main {
+    padding: 0;
+  }
+
+  section#education main .content {
+    width: 80%;
+  }
+
+  section#contact main .content > :nth-child(1) {
+    text-align: center;
+  }
+
+  section#contact main {
+    padding: 0;
+  }
+
+  section#contact main .content {
+    width: 80%;
+    margin: 0px;
+  }
+
+  section div.title {
+    top: 47px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    flex-direction: row;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  section#experience main {
+    padding: 0;
+  }
+
+  section#experience main .content {
+    width: 80%;
+    margin: 0px;
+  }
+
+  section#experience main .content article {
+    text-align: center;
+  }
+
+  section#experience main .content article img {
+    width: 100%;
+  }
+
+  section#skill main {
+    padding: 0;
+  }
+
+  section#skill main .content {
+    width: 80%;
+    margin: 0px;
+    background-color: red;
+  }
+
+  section#skill main .content article img {
+    width: 100%;
+  }
+}

@@ -62,7 +62,6 @@ section#education main .content {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 78px;
 }
 

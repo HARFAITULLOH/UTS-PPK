@@ -40,6 +40,10 @@ nav ul {
   align-items: center;
 }
 
+nav div.btn-menu {
+  display: none;
+}
+
 nav ul li {
   padding: 10px;
   position: relative;

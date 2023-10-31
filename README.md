@@ -1,1 +1,1 @@
-Tugas 1 Praktikum Pemrograman Komputer II
+UAS Praktikum Pemrograman Komputer II
