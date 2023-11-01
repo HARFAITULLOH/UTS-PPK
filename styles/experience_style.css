@@ -63,9 +63,11 @@ section#experience main .content article h2 {
   margin: 10px 0;
   padding-bottom: 5px;
   border-bottom: 2px solid #654e92;
+  padding: 0 10px;
 }
 
 section#experience main .content article p {
+  padding: 0 10px;
   max-width: 550px;
   text-align: center;
   font-size: 16px;

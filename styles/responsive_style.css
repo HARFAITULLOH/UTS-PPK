@@ -3,8 +3,26 @@
     display: none;
   }
 
+  nav ul.clicked {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    color: black;
+    flex-direction: column;
+  }
+
+  nav ul.clicked li a {
+    color: black;
+  }
+
   nav div.btn-menu {
     display: block;
+    transition: 0.3s all;
+  }
+
+  nav div.btn-menu.clicked {
+    transform: rotate(180deg);
   }
 
   section#home main {
