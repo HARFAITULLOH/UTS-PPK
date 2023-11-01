@@ -93,6 +93,15 @@
     display: none;
   }
 
+  section#home main {
+    padding: 0;
+  }
+
+  section#home main .content {
+    width: 80%;
+    padding: 0;
+  }
+
   section#education main {
     padding: 0;
   }
@@ -148,10 +157,59 @@
   section#skill main .content {
     width: 80%;
     margin: 0px;
-    background-color: red;
   }
 
   section#skill main .content article img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav {
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-right: 0px;
+    border-radius: 0px;
+  }
+
+  nav img {
+    height: 40px;
+    position: static;
+  }
+
+  section#education main,
+  section#skill main,
+  section#experience main,
+  section#contact main {
+    padding-top: 50px;
+  }
+
+  section#home main {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    box-sizing: none;
+    height: auto;
+  }
+
+  section#home main .content > a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  section#home main .content > a:nth-child(5) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  section#contact main {
+    height: auto;
+    padding: 150px 0 50px;
+  }
+
+  section#contact main .content {
+    height: 120vh;
+    background-color: red;
   }
 }
